@@ -3,37 +3,16 @@
   <head>
     <meta charset="utf-8">
     <!-- file: docs/index.html -->
-    <!--
-      PÁGINA PERSONAL — portada del portafolio
-      ──────────────────────────────────────────────────────────────
-      Si ya hiciste tu perfil en el Laboratorio 1, trae aquí su
-      contenido. Las rutas de esta página ya están ajustadas al
-      portafolio; no copies las del laboratorio, que usaban ../../
-
-      Qué editar:
-        • El <title>, el <link> a tu hoja de estilos y la descripción.
-        • Nombre, tagline y todos los marcadores con la forma {{TEXTO}}.
-        • Las cuatro rutas de la fotografía (src y srcset).
-      Qué NO cambiar:
-        • Estructura (header / aside / main / footer).
-        • El enlace "Mis entregas" (./modulos/index.html).
-        • Rutas a los logos institucionales (./assets/img/).
-
-      Nombres de archivo, si te llamas Juan Pérez:
-        assets/css/about-perez-juan.css
-        assets/img/foto-perez-juan-{160,320,480,640}.webp
-      Borra este comentario cuando termines.
-    -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Nombre Apellidos — Perfil</title>
+    <title>Hector Camaño — Perfil</title>
 
     <!-- CSS específico de esta página -->
-    <link rel="stylesheet" href="./assets/css/about-apellidos-nombre.css">
+    <link rel="stylesheet" href="./assets/css/about-camano-hector.css">
 
     <!-- Descripción breve (práctica de metadatos/SEO) -->
     <meta
       name="description"
-      content="Perfil de estudiante — Licenciatura en Desarrollo y Gestión de Software (UTP FISC Veraguas)">
+      content="Perfil de Hector Camaño, estudiante de la Licenciatura en Desarrollo y Gestión de Software de la UTP, Centro Regional de Veraguas.">
   </head>
   <body>
     <!-- Contenedor principal (layout en Grid definido en el CSS) -->
@@ -51,8 +30,8 @@
           </div>
 
           <!-- EDITA: nombre y tagline -->
-          <h1 class="nombre">Nombre Apellidos</h1>
-          <p class="tagline">Estudiante de Desarrollo de Software · {{GRUPO}}-{{NN}}</p>
+          <h1 class="nombre">Hector Camaño</h1>
+          <p class="tagline">Estudiante de Desarrollo y Gestión de Software · 4GS122-06</p>
         </div>
 
         <!-- Logos institucionales (no cambiar rutas) -->
@@ -72,15 +51,15 @@
       <aside class="sidebar">
         <figure class="perfil">
           <img
-            src="./assets/img/foto-apellidos-nombre-480.webp"
+            src="./assets/img/foto-camano-hector-480.webp"
             srcset="
-              ./assets/img/foto-apellidos-nombre-160.webp 160w,
-              ./assets/img/foto-apellidos-nombre-320.webp 320w,
-              ./assets/img/foto-apellidos-nombre-480.webp 480w,
-              ./assets/img/foto-apellidos-nombre-640.webp 640w
+              ./assets/img/foto-camano-hector-160.webp 160w,
+              ./assets/img/foto-camano-hector-320.webp 320w,
+              ./assets/img/foto-camano-hector-480.webp 480w,
+              ./assets/img/foto-camano-hector-640.webp 640w
             "
             sizes="(max-width: 700px) 128px, 160px"
-            alt="Nombre Apellidos, estudiante de LDGS UTP FISC Veraguas"
+            alt="Hector Camaño, estudiante de LDGS UTP FISC Veraguas"
             width="160"
             height="160"
             loading="lazy"
@@ -94,13 +73,13 @@
           <h2>Contacto</h2>
           <ul class="lista-contacto">
             <li>
-              <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+              <a href="mailto:hector.camano1@utp.ac.pa">hector.camano1@utp.ac.pa</a>
             </li>
             <li>
-              <a target="_blank" rel="noopener noreferrer" href="{{LINKEDIN}}">LinkedIn</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/h%C3%A9ctor-cama%C3%B1o-gonz%C3%A1lez-b90253382/">LinkedIn</a>
             </li>
             <li>
-              <a target="_blank" rel="noopener noreferrer" href="{{GITHUB}}">GitHub</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/hectorcamano">GitHub</a>
             </li>
             <li>
               <a href="./modulos/index.html">Mis entregas del curso</a>
@@ -115,36 +94,33 @@
           <h3>Lenguajes</h3>
           <div class="chips">
             <span class="chip">Java</span>
-            <span class="chip">JavaScript</span>
             <span class="chip">Python</span>
+            <span class="chip">C++</span>
             <span class="chip">SQL</span>
           </div>
 
           <h3>Frameworks & Librerías</h3>
           <div class="chips">
-            <span class="chip">Spring Boot</span>
-            <span class="chip">React</span>
             <span class="chip">Node.js</span>
           </div>
 
           <h3>Bases de datos</h3>
           <div class="chips">
             <span class="chip">MySQL</span>
-            <span class="chip">PostgreSQL</span>
           </div>
 
           <h3>Herramientas</h3>
           <div class="chips">
             <span class="chip">Git</span>
-            <span class="chip">Docker</span>
-            <span class="chip">Postman</span>
             <span class="chip">Figma</span>
+            <span class="chip">NetBeans</span>
+            <span class="chip">Visual Studio Code</span>
+            <span class="chip">GitHub</span>
           </div>
 
           <h3>Metodologías</h3>
           <div class="chips">
-            <span class="chip">Scrum</span>
-            <span class="chip">Kanban</span>
+            <span class="chip">Modelo Espiral</span>
           </div>
         </section>
       </aside>
@@ -153,7 +129,19 @@
       <main class="contenido">
         <section class="resumen card">
           <h2>Acerca de mí</h2>
-          <p>{{RESUMEN_BREVE_ELEVATOR_PITCH}}</p>
+          <p>
+            Soy estudiante de Desarrollo y Gestión de Software, creativo, responsable,
+            curioso y organizado, con interés constante por aprender nuevas tecnologías.
+            Cuento con conocimientos en Python y una certificación en Python de U Academy.
+            Me interesa especialmente el desarrollo web, el desarrollo de aplicaciones
+            móviles y el diseño UX/UI, buscando combinar la programación y el diseño
+            para crear soluciones funcionales y atractivas. También tengo experiencia
+            en creación de contenido y gestión de redes sociales, especialmente en la
+            elaboración de publicaciones para TikTok orientadas a generar alcance e
+            interacción. Actualmente busco oportunidades que me permitan adquirir
+            experiencia profesional, aplicar mis conocimientos, desarrollar nuevas
+            habilidades y crecer dentro del área de tecnología y medios digitales.
+          </p>
         </section>
 
         <!-- Duplica <article.proyecto> por cada proyecto -->
@@ -162,15 +150,20 @@
           <div class="proyectos-flex">
             <article class="proyecto">
               <header class="proyecto-head">
-                <h3>{{NOMBRE_PROYECTO}}</h3>
+                <h3>Rediseño de la aplicación para estudiantes de la UTP</h3>
                 <div class="proyecto-links">
-                  <a target="_blank" rel="noopener noreferrer" href="{{URL_GITHUB}}">Código</a>
-                  <a target="_blank" rel="noopener noreferrer" href="{{URL_DEMO}}">Demo</a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.figma.com/design/imH1Dr156gblFNqNUlmBK8/UTP-Campus?node-id=0-1&t=pF2D0UsjiFDhs8pw-1"
+                  >
+                    Ver diseño en Figma
+                  </a>
                 </div>
               </header>
-              <p>{{DESCRIPCION_PROYECTO}}</p>
-              <p class="rol"><strong>Rol:</strong> {{ROL}}</p>
-              <p class="tech"><strong>Tecnologías:</strong> {{TECNOLOGIAS}}</p>
+              <p>Propuesta de rediseño para mejorar la experiencia del usuario en la aplicación móvil de la UTP.</p>
+              <p class="rol"><strong>Rol:</strong> Diseñador UX/UI</p>
+              <p class="tech"><strong>Tecnologías:</strong> Figma, Diseño UX/UI y Prototipado</p>
             </article>
           </div>
         </section>
@@ -180,9 +173,15 @@
           <ul class="timeline">
             <li>
               <div class="item">
-                <h3>{{CARGO}} — {{ORGANIZACION}}</h3>
-                <span class="meta">{{FECHA}}</span>
-                <p>{{RESPONSABILIDADES_LOGROS}}</p>
+                <h3>Creador de contenido para redes sociales — Promotora Inmobiliaria Praderas de Arraiján</h3>
+                <span class="meta">19 de septiembre de 2025 – 15 de noviembre de 2025</span>
+                <p>
+                  Participé en la creación de contenido promocional y de entretenimiento para
+                  redes sociales, desarrollando ideas creativas orientadas a aumentar el alcance
+                  y la interacción con la audiencia. Colaboré en campañas digitales para
+                  promocionar el proyecto inmobiliario mediante contenido adaptado a las
+                  tendencias de redes sociales.
+                </p>
               </div>
             </li>
           </ul>
@@ -193,7 +192,7 @@
           <ul class="listado-simple">
             <li>
               <strong>Licenciatura en Desarrollo y Gestión de Software</strong>
-              — UTP, Centro Regional de Veraguas ({{ANIO_INICIO}}–{{ANIO_FIN}})
+              — UTP, Centro Regional de Veraguas (2025–2029)
             </li>
           </ul>
         </section>
@@ -201,15 +200,15 @@
         <section class="certificaciones card">
           <h2>Certificaciones y Cursos</h2>
           <ul class="listado-simple">
-            <li>{{CERTIFICACION_1}}</li>
-            <li>{{CURSO_1}}</li>
+            <li>Certificación en Python — U Academy</li>
           </ul>
         </section>
 
         <section class="extra card">
           <h2>Logros · Artículos · Intereses</h2>
           <ul class="listado-simple">
-            <li>{{LOGRO_O_ARTICULO}}</li>
+            <li>Participación en congresos y actividades académicas relacionadas con tecnología y desarrollo de software.</li>
+            <li>Interés en desarrollo web, aplicaciones móviles, diseño UX/UI y creación de contenido digital.</li>
           </ul>
         </section>
       </main>
@@ -223,3 +222,4 @@
     </div>
   </body>
 </html>
+
