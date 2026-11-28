@@ -1,0 +1,124 @@
+/* =====================================================================
+   maquetacion.css — Componentes maquetados de ConSentidos
+   Desarrollo de Software V · Módulo III · Práctica 2
+
+   Cómo funciona
+   - Se enlaza DESPUÉS de consentidos.css y de tema.css en las seis
+     páginas con cabecera. No redefine colores: usa los tokens del tema.
+   - Solo aplica lo visto en la Unidad 2: modelo de caja, flotación,
+     posicionamiento, z-index, aspect-ratio y object-fit. Nada de
+     Flexbox, Grid ni consultas de medios (Unidad 3).
+   - No se usa !important en ninguna regla.
+
+   Secciones
+   1. Miniaturas de los servicios (float, clear, aspect-ratio, object-fit)
+   2. Figura flotante de la vacuna antirrábica (float + flow-root)
+   3. Acceso de urgencias (position: fixed y z-index)
+   4. Glosario con términos adhesivos (position: sticky)
+   ===================================================================== */
+
+
+/* ---------------------------------------------------------------------
+   1. Miniaturas de los servicios (servicios.html, #atencion-clinica)
+      Paso 1 de la guía.
+   --------------------------------------------------------------------- */
+
+#atencion-clinica .miniatura {
+  float: left;
+  width: 6rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin: 0.25rem var(--e2) var(--e1) 0;
+  border-radius: var(--radio);
+}
+
+#atencion-clinica h3 {
+  clear: left;
+}
+
+#atencion-clinica {
+  display: flow-root;
+}
+
+
+/* ---------------------------------------------------------------------
+   2. Figura flotante de la vacuna antirrábica
+      (servicios.html, #vacuna-antirrabica)
+      Paso 2 de la guía.
+   --------------------------------------------------------------------- */
+
+.figura-flotante {
+  float: right;
+  width: min(40%, 14rem);
+  margin: 0 0 var(--e2) var(--e3);
+}
+
+.figura-flotante img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+#vacuna-antirrabica {
+  display: flow-root;
+  padding: var(--e3);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  background-color: var(--superficie);
+}
+
+
+/* ---------------------------------------------------------------------
+   3. Acceso de urgencias (las seis páginas con cabecera)
+      Paso 3 de la guía.
+
+      z-index: 2 mantiene el botón por encima del contenido y del pie
+      de página, cuyo nivel de apilamiento es 1.
+   --------------------------------------------------------------------- */
+
+.urgencias {
+  position: fixed;
+  right: var(--e2);
+  bottom: var(--e2);
+  z-index: 2;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  background-color: #B42318;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.3);
+}
+
+.urgencias:hover {
+  background-color: #8F1D13;
+}
+
+.urgencias:focus-visible {
+  outline: 3px solid var(--foco);
+  outline-offset: 3px;
+}
+
+.urgencias::before {
+  content: "\f095" / "";
+  margin-right: 0.4em;
+  font: var(--fa-font-solid);
+}
+
+body > footer {
+  padding-bottom: 5rem;
+}
+
+
+/* ---------------------------------------------------------------------
+   4. Glosario con términos adhesivos (servicios.html, #glosario)
+      Paso 4 de la guía.
+   --------------------------------------------------------------------- */
+
+#glosario dt {
+  position: sticky;
+  top: 0;
+  padding: var(--e1) 0;
+  background-color: var(--fondo);
+  border-bottom: 1px solid var(--borde);
+}

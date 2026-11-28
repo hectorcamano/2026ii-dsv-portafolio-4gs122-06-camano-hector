@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+                   script-src 'self';
+                   style-src 'self' https://fonts.googleapis.com;
+                   font-src 'self' https://fonts.gstatic.com;
+                   img-src 'self';
+                   media-src 'self';
+                   object-src 'self';
+                   frame-src 'self' https://www.openstreetmap.org;
+                   base-uri 'self';
+                   form-action 'self'">
+
+    <meta name="description" content="Página de prueba de rutas relativas de la Clínica Veterinaria ConSentidos.">
+
+    <title>Página de prueba | Clínica Veterinaria ConSentidos</title>
+
+    <link rel="icon" href="../assets/img/logo-consentidos.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../assets/css/consentidos.css">
+<link rel="stylesheet" href="../assets/css/tema.css">
+</head>
+
+<body id="arriba">
+
+    <a href="#contenido">Saltar al contenido</a>
+
+    <header>
+        <hgroup>
+            <h1>Página de prueba</h1>
+            <p>Clínica Veterinaria ConSentidos</p>
+        </hgroup>
+    </header>
+
+    <nav aria-label="Navegación del sitio">
+        <h2>El sitio</h2>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../servicios.html">Servicios</a></li>
+            <li><a href="../componentes.html">Guía de componentes</a></li>
+            <li><a href="../tarifas.html">Tarifas</a></li>
+            <li><a href="test.html">Página de prueba</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenido" tabindex="-1">
+        <section>
+            <h2>Prueba de rutas relativas</h2>
+
+            <p>
+                Esta página se encuentra dentro de la carpeta
+                <strong>paginas</strong>. Por eso, debemos utilizar
+                <code>../</code> para regresar a la carpeta principal
+                del proyecto y acceder a sus recursos.
+            </p>
+
+            <p>
+                La siguiente imagen se carga utilizando una ruta relativa:
+            </p>
+
+            <figure>
+                <img
+                    src="../assets/img/luna.svg"
+                    alt="Ilustración de Luna, una gata gris atigrada, sentada"
+                    width="320"
+                    height="240"
+                    loading="lazy">
+                <figcaption>Luna, paciente del mes.</figcaption>
+            </figure>
+
+            <p>
+                <a href="../index.html">Volver a la página de inicio</a>
+            </p>
+        </section>
+    </main>
+
+</body>
+</html>
